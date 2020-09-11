@@ -21,6 +21,10 @@
     
     </bean>
     
+    <bean id="myCricketCoach" class="com.code.springdemo.CricketCoach">
+    	<property name="fortuneService" ref="myFortuneServiceProvider"></property>
+    </bean>
+    
     <bean id="myLoggerConfig" class="com.code.springdemo.MyLoggerConfig" init-method="initLogger">
     	<property name="rootLoggerLevel" value="FINE" />
     	<property name="printedLoggerLevel" value="FINE"/>
